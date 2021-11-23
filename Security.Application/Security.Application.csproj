@@ -16,10 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Command\" />
     <Folder Include="Finder\" />
-    <Folder Include="Port\" />
-    <Folder Include="Validator\" />
   </ItemGroup>
 
 </Project>

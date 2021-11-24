@@ -27,9 +27,9 @@ namespace SecurityApi.Controllers
         }
 
         [HttpGet("validatetoken")]
-        public async Task<IActionResult> ValidateToken([FromBody] ValidateTokenEntryModel oValidateTokenEntryModel)
+        public async Task<IActionResult> ValidateToken([FromQuery] string token)
         {
-            ValidateTokenQuery oValidateTokenQuery = new ValidateTokenQuery(oValidateTokenEntryModel.Token);
+            ValidateTokenQuery oValidateTokenQuery = new ValidateTokenQuery(token);
             TokenResultDto oTokenResultDto = await _mediator.Send(oValidateTokenQuery);
             return Ok(oTokenResultDto);
         }

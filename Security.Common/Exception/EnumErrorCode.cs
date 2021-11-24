@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Security.Common.Exception
 {
     public enum EnumErrorCode
@@ -10,6 +6,9 @@ namespace Security.Common.Exception
         UserNameMandatory = 1,
         UserNameLength = 2,
         PasswordMandatory = 3,
-        PasswordLength = 4
+        PasswordLength = 4,
+        InvalidToken = 5,
+        TokenMandatory = 6,
+        UnauthorizedUser = 7
     }
 }

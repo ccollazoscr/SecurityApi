@@ -6,11 +6,13 @@ namespace Security.Common.Exception
 {
     public sealed class CustomErrorException : SystemException
     {
+
         private List<ErrorCode> lstErrorCode = new List<ErrorCode>();
+
 
         public CustomErrorException(EnumErrorCode errorCode)
         {
-            lstErrorCode.Add(new ErrorCode { Code = errorCode });
+            lstErrorCode.Add(FactoryErrorCode.GetErrorCode(errorCode));
         }
 
         public CustomErrorException(List<ErrorCode> lstErrorCode)

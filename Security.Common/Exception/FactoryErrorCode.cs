@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 
 namespace Security.Common.Exception
 {
@@ -11,6 +8,19 @@ namespace Security.Common.Exception
         {
             ErrorCode oErrorCode = new ErrorCode { Code = errorCode };
             oErrorCode.StatusCode = HttpStatusCode.BadRequest;
+
+            switch (errorCode)
+            {
+                case EnumErrorCode.InvalidToken:
+                    oErrorCode.Description = "Token Invalid";
+                    oErrorCode.StatusCode = HttpStatusCode.Unauthorized;
+                    break;
+                case EnumErrorCode.UnauthorizedUser:
+                    oErrorCode.Description = "Unauthorized user";
+                    oErrorCode.StatusCode = HttpStatusCode.Unauthorized;
+                    break;
+            }
+
             return oErrorCode;
         }
     }

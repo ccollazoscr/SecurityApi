@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Security.Model\Security.Model.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Finder\" />
-  </ItemGroup>
-
 </Project>

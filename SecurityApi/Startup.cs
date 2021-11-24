@@ -20,6 +20,7 @@ using Security.Infraestructure.Adapter.SQLServer.Repository;
 using Security.Infraestructure.Converter;
 using Security.Infraestructure.Entity;
 using Security.Model.Model;
+using SecurityApi.Exception;
 using System.Reflection;
 
 namespace SecurityApi
@@ -106,6 +107,8 @@ namespace SecurityApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.ConfigureExceptionHandler();
 
             app.UseAuthorization();
 

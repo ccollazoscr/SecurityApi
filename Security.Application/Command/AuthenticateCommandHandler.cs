@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Security.Application.Port;
+using Security.Common.Exception;
 using Security.Model.Dto;
 using Security.Model.Model;
 using System.Threading;
@@ -19,12 +20,16 @@ namespace Security.Application.Command
         {
             AuthenticateToken oAuthenticateToken = null;
             string password = _securityPort.Encrypt(request.Password);
-            if (_userManagerPort.VerifyUser(request.Username, password)) {
+            if (_userManagerPort.VerifyUser(request.Username, password))
+            {
                 User oUser = _userManagerPort.GetUserByUserName(request.Username);
                 oAuthenticateToken = new AuthenticateToken
                 {
                     Token = _securityPort.GetToken(oUser)
                 };
+            }
+            else {
+                throw new CustomErrorException(EnumErrorCode.UnauthorizedUser);
             }
             return Task.FromResult(oAuthenticateToken);
         }

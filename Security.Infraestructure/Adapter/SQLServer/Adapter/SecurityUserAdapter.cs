@@ -3,11 +3,6 @@ using Security.Common.Converter;
 using Security.Infraestructure.Adapter.SQLServer.Repository;
 using Security.Infraestructure.Entity;
 using Security.Model.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Security.Infraestructure.Adapter.SQLServer.Adapter
 {

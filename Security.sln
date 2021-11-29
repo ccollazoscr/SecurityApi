@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Api", "SecurityApi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{5EC5DDC0-E3C3-4EED-AB21-E395F24300AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Application.Test", "Security.Application.Test\Security.Application.Test.csproj", "{D755E418-DDE7-43EE-B4ED-6E35C57392FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Application.Test", "Security.Application.Test\Security.Application.Test.csproj", "{D755E418-DDE7-43EE-B4ED-6E35C57392FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Infraestructure.Test", "Security.Infraestructure.Test\Security.Infraestructure.Test.csproj", "{75769516-9C22-4234-A2D2-3BE1BEF227F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Security.Infraestructure.Test", "Security.Infraestructure.Test\Security.Infraestructure.Test.csproj", "{75769516-9C22-4234-A2D2-3BE1BEF227F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security.Api.Test", "Security.Api.Test\Security.Api.Test.csproj", "{D9226FDA-993D-421B-A2FA-B5CDD00E6249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{75769516-9C22-4234-A2D2-3BE1BEF227F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75769516-9C22-4234-A2D2-3BE1BEF227F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75769516-9C22-4234-A2D2-3BE1BEF227F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9226FDA-993D-421B-A2FA-B5CDD00E6249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9226FDA-993D-421B-A2FA-B5CDD00E6249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9226FDA-993D-421B-A2FA-B5CDD00E6249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9226FDA-993D-421B-A2FA-B5CDD00E6249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D755E418-DDE7-43EE-B4ED-6E35C57392FD} = {5EC5DDC0-E3C3-4EED-AB21-E395F24300AE}
 		{75769516-9C22-4234-A2D2-3BE1BEF227F9} = {5EC5DDC0-E3C3-4EED-AB21-E395F24300AE}
+		{D9226FDA-993D-421B-A2FA-B5CDD00E6249} = {5EC5DDC0-E3C3-4EED-AB21-E395F24300AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D00FF56-205C-43B2-A954-3FB86C933EE9}
